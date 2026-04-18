@@ -35,13 +35,13 @@ function Panel({ label, title, children, leftBorder, topBorder, active }) {
       borderTop: topBorder ? '1px solid rgba(255,255,255,0.06)' : undefined,
       background: active ? 'rgba(255,255,255,0.025)' : undefined,
     }}>
-      <div style={{ fontSize: 10, letterSpacing: '0.08em', color: '#6B7280', marginBottom: 5, fontFamily: 'DM Mono, monospace' }}>
+      <div style={{ fontSize: 10, letterSpacing: '0.08em', color: '#94A3B8', marginBottom: 5, fontFamily: 'DM Mono, monospace' }}>
         {label}
       </div>
       <div style={{ fontSize: 13, fontWeight: 600, color: '#F8FAFC', marginBottom: 7 }}>
         {title}
       </div>
-      <div style={{ fontSize: 12, color: '#9CA3AF', lineHeight: 1.6 }}>
+      <div style={{ fontSize: 12, color: '#CBD5E1', lineHeight: 1.6 }}>
         {children}
       </div>
     </div>

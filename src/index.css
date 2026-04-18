@@ -30,7 +30,7 @@ html, body, #root {
 }
 .leaflet-control-attribution {
   background: rgba(10,14,26,0.75) !important;
-  color: #475569 !important;
+  color: #64748b !important;
   font-size: 10px !important;
 }
-.leaflet-control-attribution a { color: #64748b !important; }
+.leaflet-control-attribution a { color: #94a3b8 !important; }

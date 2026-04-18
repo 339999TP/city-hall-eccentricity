@@ -69,7 +69,7 @@ export default function MapView({ city, modeIdx, isMobile }) {
       }),
     }).addTo(map);
     markerB.bindPopup(
-      `<b style="color:${mode.bColor}">${mode.bLabel}</b><br/><span style="color:#94a3b8">${B.name}</span><br/><span style="font-family:monospace;color:#64748b">${dist.toFixed(2)} km · ecc ${ecc.toFixed(3)}</span>`
+      `<b style="color:${mode.bColor}">${mode.bLabel}</b><br/><span style="color:#94a3b8">${B.name}</span><br/><span style="font-family:monospace;color:#94a3b8">${dist.toFixed(2)} km · ecc ${ecc.toFixed(3)}</span>`
     );
     layersRef.current.push(markerB);
 
@@ -141,7 +141,7 @@ export default function MapView({ city, modeIdx, isMobile }) {
             borderRadius: 10,
             padding: '16px 24px',
             textAlign: 'center',
-            color: '#6B7280',
+            color: '#94A3B8',
             fontSize: 13,
           }}>
             {isMobile ? 'Tap a city in the list below to see it here' : 'Click a city in the chart to see it on the map'}

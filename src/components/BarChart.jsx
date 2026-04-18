@@ -35,7 +35,7 @@ export default function BarChart({ modeIdx, selectedCity, onSelectCity, mobile }
         borderBottom: '1px solid rgba(255,255,255,0.06)',
         flexShrink: 0,
       }}>
-        <div style={{ fontSize: 11, color: '#6B7280', fontFamily: 'DM Mono, monospace', letterSpacing: '0.06em', marginBottom: 4 }}>
+        <div style={{ fontSize: 11, color: '#94A3B8', fontFamily: 'DM Mono, monospace', letterSpacing: '0.06em', marginBottom: 4 }}>
           eccentricity →
         </div>
         <div style={{ fontSize: 12, color: '#9CA3AF', lineHeight: 1.3 }}>
@@ -81,7 +81,7 @@ export default function BarChart({ modeIdx, selectedCity, onSelectCity, mobile }
               }}>
                 {city.name}
                 {city.isCapital && !mode.capitalsOnly && (
-                  <sup style={{ fontSize: 8, color: '#6B7280', marginLeft: 2 }}>★</sup>
+                  <sup style={{ fontSize: 8, color: '#94A3B8', marginLeft: 2 }}>★</sup>
                 )}
               </div>
 
@@ -99,7 +99,7 @@ export default function BarChart({ modeIdx, selectedCity, onSelectCity, mobile }
                 <div style={{
                   fontSize: 11,
                   fontFamily: 'DM Mono, monospace',
-                  color: isSelected ? '#F8FAFC' : '#6B7280',
+                  color: isSelected ? '#F8FAFC' : '#94A3B8',
                   whiteSpace: 'nowrap',
                 }}>
                   {ecc.toFixed(3)}
@@ -121,7 +121,7 @@ export default function BarChart({ modeIdx, selectedCity, onSelectCity, mobile }
         padding: '12px 16px 0',
         flexShrink: 0,
       }}>
-        <div style={{ fontSize: 10, color: '#6B7280', letterSpacing: '0.06em', marginBottom: 8, fontFamily: 'DM Mono, monospace' }}>
+        <div style={{ fontSize: 11, color: '#94A3B8', letterSpacing: '0.06em', marginBottom: 8, fontFamily: 'DM Mono, monospace' }}>
           COUNTRIES
         </div>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px 12px' }}>
@@ -140,10 +140,10 @@ export default function BarChart({ modeIdx, selectedCity, onSelectCity, mobile }
         flexShrink: 0,
         marginTop: 4,
       }}>
-        <div style={{ fontSize: 10, color: '#374151', letterSpacing: '0.06em', marginBottom: 6, fontFamily: 'DM Mono, monospace' }}>
+        <div style={{ fontSize: 11, color: '#6B7280', letterSpacing: '0.06em', marginBottom: 6, fontFamily: 'DM Mono, monospace' }}>
           DATA SOURCES
         </div>
-        <div style={{ fontSize: 10, color: '#374151', lineHeight: 1.6, fontFamily: 'DM Mono, monospace', whiteSpace: 'pre-line' }}>
+        <div style={{ fontSize: 10, color: '#6B7280', lineHeight: 1.6, fontFamily: 'DM Mono, monospace', whiteSpace: 'pre-line' }}>
           {DATA_SOURCES}
         </div>
       </div>

@@ -85,7 +85,7 @@ export default function App() {
         }}>
           City Hall Eccentricity
         </h1>
-        <p style={{ fontSize: 13, color: '#6B7280' }}>
+        <p style={{ fontSize: 13, color: '#94A3B8' }}>
           How far does city hall sit from the centre of its city?
         </p>
       </div>
@@ -128,13 +128,13 @@ export default function App() {
             >
               {mode.label}
               {mode.capitalsOnly && (
-                <span style={{ fontSize: isMobile ? 11 : 10, marginLeft: 5, color: active ? '#94a3b8' : '#6B7280' }}>caps</span>
+                <span style={{ fontSize: isMobile ? 11 : 10, marginLeft: 5, color: active ? '#CBD5E1' : '#94A3B8' }}>caps</span>
               )}
             </button>
           );
         })}
         {!isMobile && (
-          <div style={{ fontSize: 12, color: '#374151', display: 'flex', alignItems: 'center', marginLeft: 8 }}>
+          <div style={{ fontSize: 12, color: '#94A3B8', display: 'flex', alignItems: 'center', marginLeft: 8 }}>
             {MODES[modeIdx].desc}
           </div>
         )}
@@ -145,7 +145,7 @@ export default function App() {
         <div style={{
           padding: '8px 16px 10px',
           fontSize: 12,
-          color: '#4B5563',
+          color: '#94A3B8',
           borderBottom: '1px solid rgba(255,255,255,0.04)',
           flexShrink: 0,
         }}>
@@ -245,7 +245,7 @@ export default function App() {
         padding: isMobile ? '10px 16px' : '8px 28px',
         borderTop: '1px solid rgba(255,255,255,0.06)',
         fontSize: 11,
-        color: '#374151',
+        color: '#6B7280',
         fontFamily: 'DM Mono, monospace',
         flexShrink: 0,
       }}>
