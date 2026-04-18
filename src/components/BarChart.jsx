@@ -10,7 +10,7 @@ Building coordinates — OpenStreetMap / Wikidata
 
 Map tiles — © OpenStreetMap contributors, © CARTO`;
 
-export default function BarChart({ modeIdx, selectedCity, onSelectCity }) {
+export default function BarChart({ modeIdx, selectedCity, onSelectCity, mobile }) {
   const mode = MODES[modeIdx];
 
   const rows = CITIES
@@ -28,7 +28,7 @@ export default function BarChart({ modeIdx, selectedCity, onSelectCity }) {
   const countries = [...new Set(CITIES.map(c => c.country))].sort();
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', height: mobile ? 'auto' : '100%', overflow: mobile ? 'visible' : 'hidden' }}>
       {/* Pinned header */}
       <div style={{
         padding: '10px 16px 8px',
@@ -41,7 +41,7 @@ export default function BarChart({ modeIdx, selectedCity, onSelectCity }) {
       </div>
 
       {/* Scrollable bars */}
-      <div style={{ flex: 1, overflowY: 'auto', padding: '8px 0' }}>
+      <div style={{ flex: mobile ? 'none' : 1, overflowY: mobile ? 'visible' : 'auto', padding: '8px 0' }}>
         {rows.map(({ city, ecc, dist }) => {
           const isSelected = city === selectedCity;
           const barColor = isSelected ? mode.bColor : (CC[city.country] || '#94A3B8');
@@ -55,7 +55,7 @@ export default function BarChart({ modeIdx, selectedCity, onSelectCity }) {
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                padding: '4px 16px',
+                padding: mobile ? '8px 16px' : '4px 16px',
                 cursor: 'pointer',
                 opacity: isSelected ? 1 : 0.6,
                 transition: 'opacity 0.15s',

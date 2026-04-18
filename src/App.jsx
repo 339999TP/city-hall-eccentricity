@@ -65,10 +65,9 @@ export default function App() {
     <div style={{
       display: 'flex',
       flexDirection: 'column',
-      minHeight: '100vh',
-      height: isMobile ? 'auto' : '100vh',
+      height: '100vh',
       background: '#0A0E1A',
-      overflow: isMobile ? 'visible' : 'hidden',
+      overflow: 'hidden',
     }}>
       {/* Header */}
       <div style={{
@@ -155,32 +154,24 @@ export default function App() {
       )}
 
       {isMobile ? (
-        /* Mobile: vertical stack — map → chart → definitions */
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
-          {/* Map */}
-          <div style={{ height: 320, borderBottom: '1px solid rgba(255,255,255,0.06)', background: '#0A0E1A', position: 'relative' }}>
+        /* Mobile: map pinned at top, chart+definitions scroll below */
+        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', minHeight: 0 }}>
+          {/* Map — always visible */}
+          <div style={{ height: 220, flexShrink: 0, borderBottom: '1px solid rgba(255,255,255,0.06)', background: '#0A0E1A' }}>
             <MapView city={selectedCity} modeIdx={modeIdx} isMobile />
           </div>
 
-          {/* Chart */}
-          <div style={{
-            height: 420,
-            borderBottom: '1px solid rgba(255,255,255,0.06)',
-            overflow: 'hidden',
-            background: '#0D1117',
-            display: 'flex',
-            flexDirection: 'column',
-          }}>
+          {/* Scrollable section: full chart list + definitions */}
+          <div style={{ flex: 1, overflowY: 'auto', background: '#0D1117', minHeight: 0 }}>
             <BarChart
               modeIdx={modeIdx}
               selectedCity={selectedCity}
               onSelectCity={setSelectedCity}
+              mobile
             />
-          </div>
-
-          {/* Definitions */}
-          <div style={{ padding: '16px 16px 8px' }}>
-            <ExplainerStrip modeId={MODES[modeIdx].id} isMobile />
+            <div style={{ padding: '16px 16px 24px', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+              <ExplainerStrip modeId={MODES[modeIdx].id} isMobile />
+            </div>
           </div>
         </div>
       ) : (
