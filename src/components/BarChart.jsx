@@ -35,8 +35,11 @@ export default function BarChart({ modeIdx, selectedCity, onSelectCity, mobile }
         borderBottom: '1px solid rgba(255,255,255,0.06)',
         flexShrink: 0,
       }}>
-        <div style={{ fontSize: 11, color: '#6B7280', fontFamily: 'DM Mono, monospace', letterSpacing: '0.06em' }}>
+        <div style={{ fontSize: 11, color: '#6B7280', fontFamily: 'DM Mono, monospace', letterSpacing: '0.06em', marginBottom: 4 }}>
           eccentricity →
+        </div>
+        <div style={{ fontSize: 12, color: '#9CA3AF', lineHeight: 1.3 }}>
+          {mode.desc}
         </div>
       </div>
 
