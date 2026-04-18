@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import L from 'leaflet';
 import { MODES, getEccentricity } from '../data/cities.js';
 
-export default function MapView({ city, modeIdx }) {
+export default function MapView({ city, modeIdx, isMobile }) {
   const containerRef = useRef(null);
   const mapRef = useRef(null);
   const layersRef = useRef([]);
@@ -92,11 +92,11 @@ export default function MapView({ city, modeIdx }) {
     }).addTo(map);
     layersRef.current.push(midMarker);
 
-    // Fit bounds
-    map.fitBounds([[A.lat, A.lon], [B.lat, B.lon]], { padding: [70, 70], maxZoom: 15 });
-
-    // Invalidate size after a tick (handles panel resize)
-    setTimeout(() => map.invalidateSize(), 50);
+    // Invalidate size first so fitBounds uses correct container dimensions
+    setTimeout(() => {
+      map.invalidateSize();
+      map.fitBounds([[A.lat, A.lon], [B.lat, B.lon]], { padding: [70, 70], maxZoom: 15 });
+    }, 50);
   }, [city, modeIdx]);
 
   return (
@@ -144,7 +144,7 @@ export default function MapView({ city, modeIdx }) {
             color: '#6B7280',
             fontSize: 13,
           }}>
-            Click a city in the chart to see it on the map
+            {isMobile ? 'Tap a city in the list below to see it here' : 'Click a city in the chart to see it on the map'}
           </div>
         </div>
       )}
