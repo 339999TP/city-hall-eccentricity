@@ -10,7 +10,7 @@ Building coordinates — OpenStreetMap / Wikidata
 
 Map tiles — © OpenStreetMap contributors, © CARTO`;
 
-export default function BarChart({ modeIdx, selectedCity, onSelectCity, mobile }) {
+export default function BarChart({ modeIdx, selectedCity, onSelectCity }) {
   const mode = MODES[modeIdx];
 
   const rows = CITIES
@@ -24,32 +24,34 @@ export default function BarChart({ modeIdx, selectedCity, onSelectCity, mobile }
 
   const maxEcc = rows[0]?.ecc || 1;
 
-  // Unique countries for legend
   const countries = [...new Set(CITIES.map(c => c.country))].sort();
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: mobile ? 'auto' : '100%', overflow: mobile ? 'visible' : 'hidden' }}>
-      {/* Pinned header */}
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
+      {/* Sticky header */}
       <div style={{
+        position: 'sticky',
+        top: 0,
+        zIndex: 2,
+        background: '#0D1117',
         padding: '10px 16px 8px',
         borderBottom: '1px solid rgba(255,255,255,0.06)',
-        flexShrink: 0,
       }}>
         <div style={{ fontSize: 11, color: '#94A3B8', fontFamily: 'DM Mono, monospace', letterSpacing: '0.06em', marginBottom: 4 }}>
           eccentricity →
         </div>
-        <div style={{ fontSize: 12, color: '#9CA3AF', lineHeight: 1.3 }}>
+        <div style={{ fontSize: 12, color: '#CBD5E1', lineHeight: 1.3 }}>
           {mode.desc}
         </div>
       </div>
 
-      {/* Scrollable bars */}
-      <div style={{ flex: mobile ? 'none' : 1, overflowY: mobile ? 'visible' : 'auto', padding: '8px 0' }}>
+      {/* Bar rows — natural height, no internal scroll */}
+      <div style={{ padding: '6px 0' }}>
         {rows.map(({ city, ecc, dist }) => {
           const isSelected = city === selectedCity;
           const barColor = isSelected ? mode.bColor : (CC[city.country] || '#94A3B8');
           const barWidth = (ecc / maxEcc) * 100;
-          const barH = isSelected ? 13 : 9;
+          const barH = isSelected ? 18 : 13;
 
           return (
             <div
@@ -58,21 +60,21 @@ export default function BarChart({ modeIdx, selectedCity, onSelectCity, mobile }
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                padding: mobile ? '8px 16px' : '4px 16px',
+                padding: '6px 16px',
                 cursor: 'pointer',
-                opacity: isSelected ? 1 : 0.6,
+                opacity: isSelected ? 1 : 0.82,
                 transition: 'opacity 0.15s',
               }}
               onMouseEnter={e => e.currentTarget.style.opacity = '1'}
-              onMouseLeave={e => e.currentTarget.style.opacity = isSelected ? '1' : '0.6'}
+              onMouseLeave={e => e.currentTarget.style.opacity = isSelected ? '1' : '0.82'}
             >
               {/* Label */}
               <div style={{
-                width: 136,
+                width: 120,
                 textAlign: 'right',
                 paddingRight: 12,
                 fontSize: 12,
-                color: isSelected ? '#F8FAFC' : '#9CA3AF',
+                color: isSelected ? '#F8FAFC' : '#CBD5E1',
                 fontWeight: isSelected ? 600 : 400,
                 flexShrink: 0,
                 whiteSpace: 'nowrap',
@@ -104,7 +106,7 @@ export default function BarChart({ modeIdx, selectedCity, onSelectCity, mobile }
                 }}>
                   {ecc.toFixed(3)}
                   {isSelected && (
-                    <span style={{ color: '#9CA3AF', marginLeft: 6 }}>
+                    <span style={{ color: '#CBD5E1', marginLeft: 6 }}>
                       · {dist.toFixed(1)} km
                     </span>
                   )}
@@ -115,11 +117,10 @@ export default function BarChart({ modeIdx, selectedCity, onSelectCity, mobile }
         })}
       </div>
 
-      {/* Legend */}
+      {/* Country legend */}
       <div style={{
         borderTop: '1px solid rgba(255,255,255,0.06)',
         padding: '12px 16px 0',
-        flexShrink: 0,
       }}>
         <div style={{ fontSize: 11, color: '#94A3B8', letterSpacing: '0.06em', marginBottom: 8, fontFamily: 'DM Mono, monospace' }}>
           COUNTRIES
@@ -135,11 +136,7 @@ export default function BarChart({ modeIdx, selectedCity, onSelectCity, mobile }
       </div>
 
       {/* Data sources */}
-      <div style={{
-        padding: '12px 16px 16px',
-        flexShrink: 0,
-        marginTop: 4,
-      }}>
+      <div style={{ padding: '12px 16px 16px', marginTop: 4 }}>
         <div style={{ fontSize: 11, color: '#6B7280', letterSpacing: '0.06em', marginBottom: 6, fontFamily: 'DM Mono, monospace' }}>
           DATA SOURCES
         </div>

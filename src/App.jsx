@@ -4,13 +4,13 @@ import ExplainerStrip from './components/ExplainerStrip.jsx';
 import BarChart from './components/BarChart.jsx';
 import MapView from './components/MapView.jsx';
 
-const MIN_CHART = 260;
+const MIN_CHART = 320;
 const MIN_MAP = 280;
 
 export default function App() {
   const [modeIdx, setModeIdx] = useState(1); // Pop-Weighted default
   const [selectedCity, setSelectedCity] = useState(null);
-  const [chartWidth, setChartWidth] = useState(340);
+  const [chartWidth, setChartWidth] = useState(420);
   const [isMobile, setIsMobile] = useState(() => window.innerWidth < 768);
 
   const containerRef = useRef(null);
@@ -167,7 +167,6 @@ export default function App() {
               modeIdx={modeIdx}
               selectedCity={selectedCity}
               onSelectCity={setSelectedCity}
-              mobile
             />
             <div style={{ padding: '16px 16px 24px', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
               <ExplainerStrip modeId={MODES[modeIdx].id} isMobile />
@@ -175,12 +174,8 @@ export default function App() {
           </div>
         </div>
       ) : (
-        /* Desktop: explainer strip + side-by-side chart/map */
+        /* Desktop: side-by-side chart (scrollable) + map */
         <>
-          <div style={{ padding: '14px 28px', flexShrink: 0 }}>
-            <ExplainerStrip modeId={MODES[modeIdx].id} />
-          </div>
-
           <div
             ref={containerRef}
             style={{
@@ -191,14 +186,13 @@ export default function App() {
               minHeight: 0,
             }}
           >
-            {/* Bar chart panel */}
+            {/* Bar chart panel — scrolls as a whole */}
             <div style={{
               width: chartWidth,
               flexShrink: 0,
               borderRight: '1px solid rgba(255,255,255,0.06)',
-              overflow: 'hidden',
-              display: 'flex',
-              flexDirection: 'column',
+              overflowY: 'auto',
+              overflowX: 'hidden',
               background: '#0D1117',
             }}>
               <BarChart
@@ -206,6 +200,9 @@ export default function App() {
                 selectedCity={selectedCity}
                 onSelectCity={setSelectedCity}
               />
+              <div style={{ padding: '16px 16px 24px', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+                <ExplainerStrip modeId={MODES[modeIdx].id} />
+              </div>
             </div>
 
             {/* Draggable divider */}
