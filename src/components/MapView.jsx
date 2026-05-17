@@ -85,7 +85,7 @@ export default function MapView({ city, modeIdx, isMobile }) {
     const midLon = (A.lon + B.lon) / 2;
     const midMarker = L.marker([midLat, midLon], {
       icon: L.divIcon({
-        html: `<div style="background:rgba(10,14,26,0.85);border:1px solid rgba(255,255,255,0.12);border-radius:5px;padding:3px 7px;font-size:11px;font-family:'DM Mono',monospace;color:#e2e8f0;white-space:nowrap;">${dist.toFixed(1)} km</div>`,
+        html: `<div style="background:rgba(10,14,26,0.85);border:1px solid rgba(255,255,255,0.12);border-radius:5px;padding:3px 7px;font-size:11px;font-family:IBM Plex Mono,monospace;color:#e2e8f0;white-space:nowrap;">${dist.toFixed(1)} km</div>`,
         className: '',
         iconAnchor: [30, 10],
       }),

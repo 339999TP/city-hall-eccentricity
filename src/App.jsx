@@ -76,7 +76,7 @@ export default function App() {
         flexShrink: 0,
       }}>
         <h1 style={{
-          fontFamily: 'Syne, sans-serif',
+          fontFamily: "'Space Grotesk', sans-serif",
           fontSize: isMobile ? 22 : 26,
           fontWeight: 800,
           color: '#F8FAFC',
@@ -117,7 +117,7 @@ export default function App() {
                 background: active ? `${mode.lineColor}28` : 'rgba(255,255,255,0.03)',
                 color: active ? '#F8FAFC' : '#9CA3AF',
                 fontSize: isMobile ? 15 : 13,
-                fontFamily: 'DM Sans, sans-serif',
+                fontFamily: "'Inter', sans-serif",
                 fontWeight: active ? 700 : 500,
                 cursor: 'pointer',
                 transition: 'all 0.15s',
@@ -243,7 +243,7 @@ export default function App() {
         borderTop: '1px solid rgba(255,255,255,0.06)',
         fontSize: 11,
         color: '#6B7280',
-        fontFamily: 'DM Mono, monospace',
+        fontFamily: "'IBM Plex Mono', monospace",
         flexShrink: 0,
       }}>
         Eccentricity = haversine distance ÷ equivalent radius (√(area/π)). All coordinates from OpenStreetMap / Wikidata. Administrative areas from official national statistics.

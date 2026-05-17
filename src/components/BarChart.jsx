@@ -37,7 +37,7 @@ export default function BarChart({ modeIdx, selectedCity, onSelectCity }) {
         padding: '10px 16px 8px',
         borderBottom: '1px solid rgba(255,255,255,0.06)',
       }}>
-        <div style={{ fontSize: 11, color: '#94A3B8', fontFamily: 'DM Mono, monospace', letterSpacing: '0.06em', marginBottom: 4 }}>
+        <div style={{ fontSize: 11, color: '#94A3B8', fontFamily: "'IBM Plex Mono', monospace", letterSpacing: '0.06em', marginBottom: 4 }}>
           eccentricity →
         </div>
         <div style={{ fontSize: 12, color: '#CBD5E1', lineHeight: 1.3 }}>
@@ -100,7 +100,7 @@ export default function BarChart({ modeIdx, selectedCity, onSelectCity }) {
                 }} />
                 <div style={{
                   fontSize: 11,
-                  fontFamily: 'DM Mono, monospace',
+                  fontFamily: "'IBM Plex Mono', monospace",
                   color: isSelected ? '#F8FAFC' : '#94A3B8',
                   whiteSpace: 'nowrap',
                 }}>
@@ -122,7 +122,7 @@ export default function BarChart({ modeIdx, selectedCity, onSelectCity }) {
         borderTop: '1px solid rgba(255,255,255,0.06)',
         padding: '12px 16px 0',
       }}>
-        <div style={{ fontSize: 11, color: '#94A3B8', letterSpacing: '0.06em', marginBottom: 8, fontFamily: 'DM Mono, monospace' }}>
+        <div style={{ fontSize: 11, color: '#94A3B8', letterSpacing: '0.06em', marginBottom: 8, fontFamily: "'IBM Plex Mono', monospace" }}>
           COUNTRIES
         </div>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px 12px' }}>
@@ -137,10 +137,10 @@ export default function BarChart({ modeIdx, selectedCity, onSelectCity }) {
 
       {/* Data sources */}
       <div style={{ padding: '12px 16px 16px', marginTop: 4 }}>
-        <div style={{ fontSize: 11, color: '#6B7280', letterSpacing: '0.06em', marginBottom: 6, fontFamily: 'DM Mono, monospace' }}>
+        <div style={{ fontSize: 11, color: '#6B7280', letterSpacing: '0.06em', marginBottom: 6, fontFamily: "'IBM Plex Mono', monospace" }}>
           DATA SOURCES
         </div>
-        <div style={{ fontSize: 10, color: '#6B7280', lineHeight: 1.6, fontFamily: 'DM Mono, monospace', whiteSpace: 'pre-line' }}>
+        <div style={{ fontSize: 10, color: '#6B7280', lineHeight: 1.6, fontFamily: "'IBM Plex Mono', monospace", whiteSpace: 'pre-line' }}>
           {DATA_SOURCES}
         </div>
       </div>
