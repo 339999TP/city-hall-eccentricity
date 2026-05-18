@@ -6,7 +6,13 @@ Geometric centroids — Natural Earth 1:10m Admin-1 boundary polygons (naturalea
 
 Administrative areas — Official national statistics offices
 
-Building coordinates — OpenStreetMap / Wikidata
+City hall coordinates — OpenStreetMap / Wikidata
+
+Zero points (km 0 markers) — OpenStreetMap nodes; Wikidata; official city records (Columbus Circle NYC, Nihonbashi Tokyo, Puerta del Sol Madrid, Piazza Venezia Rome, Manezhnaya Square Moscow, and equivalents)
+
+Parliament buildings — OpenStreetMap / Wikidata
+
+Seats of government (leader residences / offices) — OpenStreetMap / Wikidata
 
 Map tiles — © OpenStreetMap contributors, © CARTO`;
 
