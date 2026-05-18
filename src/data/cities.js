@@ -58,7 +58,7 @@ export const CITIES = [
     hall:       { lat: 59.9082,  lon: 10.7306,   name: "Oslo Rådhus" },
     geo:        { lat: 59.96925, lon: 10.65234,  name: "Geometric centroid" },
     pw:         { lat: 59.92074, lon: 10.76887,  name: "Pop-weighted centroid" },
-    zero:       { lat: 59.9074,  lon: 10.7461,   name: "Oslo Cathedral" },
+    zero:       { lat: 59.9127,  lon: 10.7461,   name: "Oslo Cathedral" },
     parliament: { lat: 59.9130,  lon: 10.7387,   name: "Stortinget" },
     leader:     { lat: 59.9134,  lon: 10.7395,   name: "Statsministerens kontor" },
   },
@@ -76,7 +76,7 @@ export const CITIES = [
     hall:       { lat: 41.3833,  lon:  2.1769,   name: "Ajuntament de Barcelona" },
     geo:        { lat: 41.40239, lon:  2.1632,   name: "Geometric centroid" },
     pw:         { lat: 41.40312, lon:  2.16595,  name: "Pop-weighted centroid" },
-    zero:       { lat: 41.3853,  lon:  2.1687,   name: "Plaça de Catalunya" },
+    zero:       { lat: 41.3870,  lon:  2.1700,   name: "Plaça de Catalunya" },
     parliament: null, leader: null,
   },
   {
@@ -85,7 +85,7 @@ export const CITIES = [
     geo:        { lat: 55.49923, lon: 37.3626,   name: "Geometric centroid" },
     pw:         { lat: 55.7367,  lon: 37.59139,  name: "Pop-weighted centroid" },
     zero:       { lat: 55.7554,  lon: 37.6189,   name: "Zero Km Marker (Manezhnaya)" },
-    parliament: { lat: 55.7554,  lon: 37.6194,   name: "State Duma" },
+    parliament: { lat: 55.7518,  lon: 37.6157,   name: "State Duma (Okhotny Ryad)" },
     leader:     { lat: 55.7520,  lon: 37.6175,   name: "Kremlin" },
   },
   {
@@ -95,7 +95,7 @@ export const CITIES = [
     pw:         { lat: 37.55349, lon: 126.99136, name: "Pop-weighted centroid" },
     zero:       { lat: 37.5759,  lon: 126.9769,  name: "Gwanghwamun Gate" },
     parliament: { lat: 37.5322,  lon: 126.9130,  name: "National Assembly (Yeouido)" },
-    leader:     { lat: 37.5232,  lon: 126.9761,  name: "Yongsan Presidential Office" },
+    leader:     { lat: 37.5335,  lon: 126.9762,  name: "Yongsan Presidential Office" },
   },
   {
     name: "Tokyo", country: "Japan", isCapital: true, adminAreaKm2: 622,
@@ -143,8 +143,8 @@ export const CITIES = [
     hall:       { lat: 38.9072,  lon: -77.0369,  name: "John A. Wilson Building" },
     geo:        { lat: 38.90686, lon: -77.01454, name: "Geometric centroid" },
     pw:         { lat: 38.90686, lon: -77.01436, name: "Pop-weighted centroid" },
-    zero:       { lat: 38.8873,  lon: -77.0054,  name: "US Capitol (DC grid zero)" },
-    parliament: { lat: 38.8873,  lon: -77.0054,  name: "US Capitol" },
+    zero:       { lat: 38.8897,  lon: -77.0089,  name: "US Capitol (DC grid zero)" },
+    parliament: { lat: 38.8897,  lon: -77.0089,  name: "US Capitol" },
     leader:     { lat: 38.8977,  lon: -77.0366,  name: "White House" },
   },
   {
@@ -168,7 +168,7 @@ export const CITIES = [
     hall:       { lat: 48.1374,  lon: 11.5755,   name: "Neues Rathaus" },
     geo:        { lat: 48.13744, lon: 11.56545,  name: "Geometric centroid" },
     pw:         { lat: 48.13795, lon: 11.56466,  name: "Pop-weighted centroid" },
-    zero:       { lat: 48.1373,  lon: 11.5718,   name: "Marienplatz" },
+    zero:       { lat: 48.1374,  lon: 11.5755,   name: "Marienplatz" },
     parliament: null, leader: null,
   },
   {
@@ -184,7 +184,7 @@ export const CITIES = [
     hall:       { lat: 47.3769,  lon:  8.5417,   name: "Stadthaus Zürich" },
     geo:        { lat: 47.38412, lon:  8.53402,  name: "Geometric centroid" },
     pw:         { lat: 47.38875, lon:  8.53010,  name: "Pop-weighted centroid" },
-    zero:       { lat: 47.3778,  lon:  8.5403,   name: "Paradeplatz" },
+    zero:       { lat: 47.3686,  lon:  8.5390,   name: "Paradeplatz" },
     parliament: null, leader: null,
   },
   {
@@ -201,7 +201,7 @@ export const CITIES = [
     hall:       { lat: 50.0875,  lon: 14.4213,   name: "New Town Hall (Mariánské náměstí)" },
     geo:        { lat: 50.06399, lon: 14.45296,  name: "Geometric centroid" },
     pw:         { lat: 50.07119, lon: 14.45061,  name: "Pop-weighted centroid" },
-    zero:       { lat: 50.0875,  lon: 14.4210,   name: "Old Town Square" },
+    zero:       { lat: 50.0872,  lon: 14.4213,   name: "Old Town Square" },
     parliament: { lat: 50.0882,  lon: 14.4020,   name: "Chamber of Deputies" },
     leader:     { lat: 50.0932,  lon: 14.4051,   name: "Strakova Akademie (PM)" },
   },
@@ -245,7 +245,7 @@ export const CC = {
 export const MODE_EXPLAINERS = {
   geo: {
     title: "Geometric centroid",
-    body: "The mathematical centre of the administrative boundary polygon — the point that minimises average distance to every point on the border. A clean, objective measure but can be misleading when city boundaries are oddly shaped or include large unpopulated areas."
+    body: "The centre of mass of the administrative boundary area — the average position of all points inside the city boundary, equivalent to where it would balance on a pin. A clean, objective measure but can be misleading when boundaries are oddly shaped or include large unpopulated areas."
   },
   pw: {
     title: "Population-weighted centroid",
@@ -261,7 +261,7 @@ export const MODE_EXPLAINERS = {
   },
   lead: {
     title: "Head of government's residence",
-    body: "How far is city hall from where the prime minister or president works? Madrid's Moncloa is 4 km from Cibeles; Seoul's Yongsan office is 4 km from City Hall; London's Downing Street is just 1 km from the old City Hall — and 10 km from the new one."
+    body: "How far is city hall from where the prime minister or president works? Madrid's Moncloa is 4 km from Cibeles; Seoul's Yongsan office is ~3 km from City Hall; London's Downing Street is 3.4 km from the old City Hall — and 10 km from the new one."
   }
 };
 

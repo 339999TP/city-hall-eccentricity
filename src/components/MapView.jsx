@@ -11,8 +11,8 @@ export default function MapView({ city, modeIdx, isMobile }) {
   useEffect(() => {
     if (mapRef.current) return;
     const map = L.map(containerRef.current, {
-      center: [51.5, -0.1],
-      zoom: 10,
+      center: [30, 10],
+      zoom: 2,
       zoomControl: true,
     });
 
@@ -93,10 +93,11 @@ export default function MapView({ city, modeIdx, isMobile }) {
     layersRef.current.push(midMarker);
 
     // Invalidate size first so fitBounds uses correct container dimensions
-    setTimeout(() => {
+    const tid = setTimeout(() => {
       map.invalidateSize();
       map.fitBounds([[A.lat, A.lon], [B.lat, B.lon]], { padding: [70, 70], maxZoom: 15 });
     }, 50);
+    return () => clearTimeout(tid);
   }, [city, modeIdx]);
 
   return (

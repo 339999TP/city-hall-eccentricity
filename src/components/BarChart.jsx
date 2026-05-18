@@ -1,6 +1,6 @@
 import { CITIES, MODES, CC, getEccentricity } from '../data/cities.js';
 
-const DATA_SOURCES = `Pop-weighted centroids — ONS Census 2021 (UK); INSEE RP 2021 (France); Zensus 2022 (Germany); Statistik Austria 2023; Statistics Korea 2020; Tokyo Metropolitan Statistics 2020; US Census 2020; Statistics Canada 2021; GUS 2021 (Poland); ISTAT 2021 (Italy); INE Padrón 2021 (Spain); Statbel 2022 (Belgium); Oslo Statistikk 2023; ČSÚ 2021 (Czech Republic); Rosstat 2021 (Russia)
+const DATA_SOURCES = `Pop-weighted centroids — ONS Census 2021 (UK); INSEE RP 2021 (France); Zensus 2022 (Germany); Statistik Austria 2023; Statistics Korea 2020; Tokyo Metropolitan Statistics 2020; US Census 2020; Statistics Canada 2021; GUS 2021 (Poland); ISTAT 2021 (Italy); INE Padrón 2021 (Spain); Statbel 2022 (Belgium); Oslo Statistikk 2023; ČSÚ 2021 (Czech Republic); Rosstat 2021 (Russia); CBS 2021 (Netherlands); BFS 2021 (Switzerland)
 
 Geometric centroids — Natural Earth 1:10m Admin-1 boundary polygons (naturalearthdata.com)
 
