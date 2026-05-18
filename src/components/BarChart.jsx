@@ -133,6 +133,9 @@ export default function BarChart({ modeIdx, selectedCity, onSelectCity, mobile }
             </div>
           ))}
         </div>
+        <div style={{ marginTop: 8, fontSize: 10, color: '#6B7280', fontFamily: "'IBM Plex Mono', monospace" }}>
+          ★ national capital
+        </div>
       </div>
 
       {/* Data sources */}
