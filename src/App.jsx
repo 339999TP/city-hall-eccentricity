@@ -162,11 +162,12 @@ export default function App() {
           </div>
 
           {/* Scrollable section: full chart list + definitions */}
-          <div style={{ flex: 1, overflowY: 'auto', background: '#0D1117', minHeight: 0 }}>
+          <div style={{ flex: 1, overflowY: 'auto', WebkitOverflowScrolling: 'touch', background: '#0D1117', minHeight: 0 }}>
             <BarChart
               modeIdx={modeIdx}
               selectedCity={selectedCity}
               onSelectCity={setSelectedCity}
+              mobile
             />
             <div style={{ padding: '16px 16px 24px', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
               <ExplainerStrip modeId={MODES[modeIdx].id} isMobile />

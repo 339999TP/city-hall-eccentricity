@@ -10,7 +10,7 @@ Building coordinates — OpenStreetMap / Wikidata
 
 Map tiles — © OpenStreetMap contributors, © CARTO`;
 
-export default function BarChart({ modeIdx, selectedCity, onSelectCity }) {
+export default function BarChart({ modeIdx, selectedCity, onSelectCity, mobile }) {
   const mode = MODES[modeIdx];
 
   const rows = CITIES
@@ -28,21 +28,21 @@ export default function BarChart({ modeIdx, selectedCity, onSelectCity }) {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
-      {/* Sticky header */}
+      {/* Header — sticky on desktop, plain on mobile (iOS Safari sticky-as-fixed bug) */}
       <div style={{
-        position: 'sticky',
-        top: 0,
-        zIndex: 2,
+        ...(mobile ? {} : { position: 'sticky', top: 0, zIndex: 2 }),
         background: '#0D1117',
         padding: '10px 16px 8px',
         borderBottom: '1px solid rgba(255,255,255,0.06)',
       }}>
-        <div style={{ fontSize: 11, color: '#94A3B8', fontFamily: "'IBM Plex Mono', monospace", letterSpacing: '0.06em', marginBottom: 4 }}>
+        <div style={{ fontSize: 11, color: '#94A3B8', fontFamily: "'IBM Plex Mono', monospace", letterSpacing: '0.06em', marginBottom: mobile ? 0 : 4 }}>
           eccentricity →
         </div>
-        <div style={{ fontSize: 12, color: '#CBD5E1', lineHeight: 1.3 }}>
-          {mode.desc}
-        </div>
+        {!mobile && (
+          <div style={{ fontSize: 12, color: '#CBD5E1', lineHeight: 1.3 }}>
+            {mode.desc}
+          </div>
+        )}
       </div>
 
       {/* Bar rows — natural height, no internal scroll */}
