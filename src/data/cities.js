@@ -1,7 +1,7 @@
 export const CITIES = [
   {
     name: "London (new)", country: "UK", isCapital: true, adminAreaKm2: 1572,
-    hall:       { lat: 51.5025,  lon:  0.0194,   name: "City Hall, Royal Docks (2022–)" },
+    hall:       { lat: 51.5073,  lon:  0.0162,   name: "City Hall, Royal Docks (2022–)" },
     geo:        { lat: 51.4972,  lon: -0.1003,   name: "Geometric centroid" },
     pw:         { lat: 51.50701, lon: -0.11406,  name: "Pop-weighted centroid" },
     zero:       { lat: 51.5074,  lon: -0.1278,   name: "Charing Cross" },
@@ -28,7 +28,7 @@ export const CITIES = [
   },
   {
     name: "Berlin", country: "Germany", isCapital: true, adminAreaKm2: 892,
-    hall:       { lat: 52.5163,  lon: 13.4083,   name: "Rotes Rathaus" },
+    hall:       { lat: 52.5178,  lon: 13.4050,   name: "Rotes Rathaus" },
     geo:        { lat: 52.50021, lon: 13.40449,  name: "Geometric centroid" },
     pw:         { lat: 52.51056, lon: 13.40339,  name: "Pop-weighted centroid" },
     zero:       { lat: 52.5163,  lon: 13.3777,   name: "Brandenburg Gate" },
@@ -37,7 +37,7 @@ export const CITIES = [
   },
   {
     name: "Vienna", country: "Austria", isCapital: true, adminAreaKm2: 415,
-    hall:       { lat: 48.2107,  lon: 16.3561,   name: "Wiener Rathaus" },
+    hall:       { lat: 48.2107,  lon: 16.3581,   name: "Wiener Rathaus" },
     geo:        { lat: 48.22319, lon: 16.38414,  name: "Geometric centroid" },
     pw:         { lat: 48.20312, lon: 16.36649,  name: "Pop-weighted centroid" },
     zero:       { lat: 48.2082,  lon: 16.3738,   name: "Stephansdom" },
@@ -46,7 +46,7 @@ export const CITIES = [
   },
   {
     name: "Brussels", country: "Belgium", isCapital: true, adminAreaKm2: 162,
-    hall:       { lat: 50.8467,  lon:  4.3517,   name: "Hôtel de Ville (Grand Place)" },
+    hall:       { lat: 50.8467,  lon:  4.3525,   name: "Hôtel de Ville (Grand Place)" },
     geo:        { lat: 50.8367,  lon:  4.37041,  name: "Geometric centroid" },
     pw:         { lat: 50.84279, lon:  4.36113,  name: "Pop-weighted centroid" },
     zero:       { lat: 50.8467,  lon:  4.3525,   name: "Grand Place" },
@@ -81,7 +81,7 @@ export const CITIES = [
   },
   {
     name: "Moscow", country: "Russia", isCapital: true, adminAreaKm2: 2511,
-    hall:       { lat: 55.7558,  lon: 37.6176,   name: "Moscow Government (Tverskaya)" },
+    hall:       { lat: 55.7537,  lon: 37.6178,   name: "Moscow Government (Tverskaya)" },
     geo:        { lat: 55.49923, lon: 37.3626,   name: "Geometric centroid" },
     pw:         { lat: 55.7367,  lon: 37.59139,  name: "Pop-weighted centroid" },
     zero:       { lat: 55.7554,  lon: 37.6189,   name: "Zero Km Marker (Manezhnaya)" },
@@ -99,7 +99,7 @@ export const CITIES = [
   },
   {
     name: "Tokyo", country: "Japan", isCapital: true, adminAreaKm2: 622,
-    hall:       { lat: 35.6894,  lon: 139.6917,  name: "Tokyo Metropolitan Govt (Shinjuku)" },
+    hall:       { lat: 35.6872,  lon: 139.6887,  name: "Tokyo Metropolitan Govt (Shinjuku)" },
     geo:        { lat: 35.6942,  lon: 139.74105, name: "Geometric centroid" },
     pw:         { lat: 35.69212, lon: 139.73524, name: "Pop-weighted centroid" },
     zero:       { lat: 35.6837,  lon: 139.7740,  name: "Nihonbashi (Km 0)" },
@@ -140,7 +140,7 @@ export const CITIES = [
   },
   {
     name: "Washington DC", country: "USA", isCapital: true, adminAreaKm2: 177,
-    hall:       { lat: 38.9072,  lon: -77.0369,  name: "John A. Wilson Building" },
+    hall:       { lat: 38.8952,  lon: -77.0313,  name: "John A. Wilson Building" },
     geo:        { lat: 38.90686, lon: -77.01454, name: "Geometric centroid" },
     pw:         { lat: 38.90686, lon: -77.01436, name: "Pop-weighted centroid" },
     zero:       { lat: 38.8897,  lon: -77.0089,  name: "US Capitol (DC grid zero)" },
@@ -157,7 +157,7 @@ export const CITIES = [
   },
   {
     name: "Hamburg", country: "Germany", isCapital: false, adminAreaKm2: 755,
-    hall:       { lat: 53.5503,  lon:  9.9991,   name: "Hamburg Rathaus" },
+    hall:       { lat: 53.5507,  lon:  9.9932,   name: "Hamburg Rathaus" },
     geo:        { lat: 53.54417, lon: 10.03044,  name: "Geometric centroid" },
     pw:         { lat: 53.55694, lon: 10.02219,  name: "Pop-weighted centroid" },
     zero:       { lat: 53.5498,  lon:  9.9995,   name: "Rathaus / Binnenalster" },
@@ -173,7 +173,7 @@ export const CITIES = [
   },
   {
     name: "Amsterdam", country: "Netherlands", isCapital: false, adminAreaKm2: 219,
-    hall:       { lat: 52.3728,  lon:  4.8936,   name: "Stadhuis Amsterdam" },
+    hall:       { lat: 52.3675,  lon:  4.9013,   name: "Stadhuis Amsterdam" },
     geo:        { lat: 52.36116, lon:  4.9009,   name: "Geometric centroid" },
     pw:         { lat: 52.36255, lon:  4.89537,  name: "Pop-weighted centroid" },
     zero:       { lat: 52.3731,  lon:  4.8932,   name: "Dam Square" },
@@ -181,7 +181,7 @@ export const CITIES = [
   },
   {
     name: "Zurich", country: "Switzerland", isCapital: false, adminAreaKm2: 88,
-    hall:       { lat: 47.3769,  lon:  8.5417,   name: "Stadthaus Zürich" },
+    hall:       { lat: 47.3714,  lon:  8.5425,   name: "Stadthaus Zürich" },
     geo:        { lat: 47.38412, lon:  8.53402,  name: "Geometric centroid" },
     pw:         { lat: 47.38875, lon:  8.53010,  name: "Pop-weighted centroid" },
     zero:       { lat: 47.3686,  lon:  8.5390,   name: "Paradeplatz" },
@@ -189,7 +189,7 @@ export const CITIES = [
   },
   {
     name: "Warsaw", country: "Poland", isCapital: true, adminAreaKm2: 517,
-    hall:       { lat: 52.2297,  lon: 21.0122,   name: "Warsaw City Hall (Plac Bankowy)" },
+    hall:       { lat: 52.2432,  lon: 21.0009,   name: "Warsaw City Hall (Plac Bankowy)" },
     geo:        { lat: 52.22696, lon: 21.02421,  name: "Geometric centroid" },
     pw:         { lat: 52.23031, lon: 21.01757,  name: "Pop-weighted centroid" },
     zero:       { lat: 52.2316,  lon: 21.0110,   name: "Km 0 Marker (Centrum)" },
@@ -198,7 +198,7 @@ export const CITIES = [
   },
   {
     name: "Prague", country: "Czech Republic", isCapital: true, adminAreaKm2: 496,
-    hall:       { lat: 50.0875,  lon: 14.4213,   name: "New Town Hall (Mariánské náměstí)" },
+    hall:       { lat: 50.0878,  lon: 14.4168,   name: "New Town Hall (Mariánské náměstí)" },
     geo:        { lat: 50.06399, lon: 14.45296,  name: "Geometric centroid" },
     pw:         { lat: 50.07119, lon: 14.45061,  name: "Pop-weighted centroid" },
     zero:       { lat: 50.0872,  lon: 14.4213,   name: "Old Town Square" },
