@@ -42,7 +42,7 @@ export const CITIES = [
     pw:         { lat: 48.20312, lon: 16.36649,  name: "Pop-weighted centroid" },
     zero:       { lat: 48.2082,  lon: 16.3738,   name: "Stephansdom" },
     parliament: { lat: 48.2048,  lon: 16.3571,   name: "Parlament" },
-    leader:     { lat: 48.2082,  lon: 16.3581,   name: "Bundeskanzleramt" },
+    leader:     { lat: 48.2083,  lon: 16.3639,   name: "Bundeskanzleramt" },
   },
   {
     name: "Brussels", country: "Belgium", isCapital: true, adminAreaKm2: 162,
@@ -193,7 +193,7 @@ export const CITIES = [
     geo:        { lat: 52.22696, lon: 21.02421,  name: "Geometric centroid" },
     pw:         { lat: 52.23031, lon: 21.01757,  name: "Pop-weighted centroid" },
     zero:       { lat: 52.2316,  lon: 21.0110,   name: "Km 0 Marker (Centrum)" },
-    parliament: { lat: 52.2208,  lon: 21.0209,   name: "Sejm" },
+    parliament: { lat: 52.2253,  lon: 21.0281,   name: "Sejm" },
     leader:     { lat: 52.2232,  lon: 21.0218,   name: "Kancelaria Prezesa Rady Ministrów" },
   },
   {
@@ -202,7 +202,7 @@ export const CITIES = [
     geo:        { lat: 50.06399, lon: 14.45296,  name: "Geometric centroid" },
     pw:         { lat: 50.07119, lon: 14.45061,  name: "Pop-weighted centroid" },
     zero:       { lat: 50.0872,  lon: 14.4213,   name: "Old Town Square" },
-    parliament: { lat: 50.0882,  lon: 14.4020,   name: "Chamber of Deputies" },
+    parliament: { lat: 50.0898,  lon: 14.4039,   name: "Chamber of Deputies" },
     leader:     { lat: 50.0932,  lon: 14.4051,   name: "Strakova Akademie (PM)" },
   },
   {
