@@ -1,0 +1,131 @@
+city,country,type,name,lat,lon
+London (new),UK,hall,City Hall Royal Docks (2022–),51.5073,0.0162
+London (new),UK,geo,Geometric centroid,51.4972,-0.1003
+London (new),UK,pw,Pop-weighted centroid,51.50701,-0.11406
+London (new),UK,zero,Charing Cross,51.5074,-0.1278
+London (new),UK,parliament,Palace of Westminster,51.4994,-0.1247
+London (new),UK,leader,10 Downing Street,51.5034,-0.1276
+London (old),UK,hall,City Hall More London (2002–2021),51.5054,-0.0785
+London (old),UK,geo,Geometric centroid,51.4972,-0.1003
+London (old),UK,pw,Pop-weighted centroid,51.50701,-0.11406
+London (old),UK,zero,Charing Cross,51.5074,-0.1278
+London (old),UK,parliament,Palace of Westminster,51.4994,-0.1247
+London (old),UK,leader,10 Downing Street,51.5034,-0.1276
+Paris,France,hall,Hôtel de Ville,48.8559,2.3525
+Paris,France,geo,Geometric centroid,48.85732,2.34704
+Paris,France,pw,Pop-weighted centroid,48.86049,2.34426
+Paris,France,zero,Notre-Dame Km Zéro,48.8530,2.3499
+Paris,France,parliament,Assemblée Nationale,48.8634,2.3182
+Paris,France,leader,Élysée Palace,48.8713,2.3166
+Berlin,Germany,hall,Rotes Rathaus,52.5178,13.4050
+Berlin,Germany,geo,Geometric centroid,52.50021,13.40449
+Berlin,Germany,pw,Pop-weighted centroid,52.51056,13.40339
+Berlin,Germany,zero,Brandenburg Gate,52.5163,13.3777
+Berlin,Germany,parliament,Bundestag (Reichstag),52.5186,13.3762
+Berlin,Germany,leader,Bundeskanzleramt,52.5207,13.3688
+Vienna,Austria,hall,Wiener Rathaus,48.2107,16.3581
+Vienna,Austria,geo,Geometric centroid,48.22319,16.38414
+Vienna,Austria,pw,Pop-weighted centroid,48.20312,16.36649
+Vienna,Austria,zero,Stephansdom,48.2082,16.3738
+Vienna,Austria,parliament,Parlament,48.2048,16.3571
+Vienna,Austria,leader,Bundeskanzleramt,48.2082,16.3581
+Brussels,Belgium,hall,Hôtel de Ville (Grand Place),50.8467,4.3525
+Brussels,Belgium,geo,Geometric centroid,50.8367,4.37041
+Brussels,Belgium,pw,Pop-weighted centroid,50.84279,4.36113
+Brussels,Belgium,zero,Grand Place,50.8467,4.3525
+Brussels,Belgium,parliament,Palais de la Nation,50.8473,4.3653
+Brussels,Belgium,leader,Wetstraat 16 (Prime Minister),50.8459,4.3681
+Oslo,Norway,hall,Oslo Rådhus,59.9071,10.7335
+Oslo,Norway,geo,Geometric centroid,59.96925,10.65234
+Oslo,Norway,pw,Pop-weighted centroid,59.92074,10.76887
+Oslo,Norway,zero,Oslo Cathedral,59.9127,10.7461
+Oslo,Norway,parliament,Stortinget,59.9130,10.7387
+Oslo,Norway,leader,Statsministerens kontor,59.9134,10.7395
+Madrid,Spain,hall,Palacio de Cibeles,40.4196,-3.6925
+Madrid,Spain,geo,Geometric centroid,40.42276,-3.67492
+Madrid,Spain,pw,Pop-weighted centroid,40.42318,-3.68334
+Madrid,Spain,zero,Puerta del Sol Km 0,40.4169,-3.7035
+Madrid,Spain,parliament,Congreso de los Diputados,40.4159,-3.6976
+Madrid,Spain,leader,Palacio de la Moncloa,40.4478,-3.7214
+Barcelona,Spain,hall,Ajuntament de Barcelona,41.3826,2.1769
+Barcelona,Spain,geo,Geometric centroid,41.40239,2.1632
+Barcelona,Spain,pw,Pop-weighted centroid,41.40312,2.16595
+Barcelona,Spain,zero,Plaça de Catalunya,41.3870,2.1700
+Moscow,Russia,hall,Moscow Government (Tverskaya),55.7537,37.6178
+Moscow,Russia,geo,Geometric centroid,55.49923,37.3626
+Moscow,Russia,pw,Pop-weighted centroid,55.7367,37.59139
+Moscow,Russia,zero,Zero Km Marker (Manezhnaya),55.7554,37.6189
+Moscow,Russia,parliament,State Duma (Okhotny Ryad),55.7518,37.6157
+Moscow,Russia,leader,Kremlin,55.7520,37.6175
+Seoul,South Korea,hall,Seoul Metropolitan Government,37.5659,126.9780
+Seoul,South Korea,geo,Geometric centroid,37.53839,127.0073
+Seoul,South Korea,pw,Pop-weighted centroid,37.55349,126.99136
+Seoul,South Korea,zero,Gwanghwamun Gate,37.5759,126.9769
+Seoul,South Korea,parliament,National Assembly (Yeouido),37.5322,126.9130
+Seoul,South Korea,leader,Yongsan Presidential Office,37.5335,126.9762
+Tokyo,Japan,hall,Tokyo Metropolitan Govt (Shinjuku),35.6872,139.6887
+Tokyo,Japan,geo,Geometric centroid,35.6942,139.74105
+Tokyo,Japan,pw,Pop-weighted centroid,35.69212,139.73524
+Tokyo,Japan,zero,Nihonbashi (Km 0),35.6837,139.7740
+Tokyo,Japan,parliament,National Diet Building,35.6760,139.7437
+Tokyo,Japan,leader,Kantei (PM's Residence),35.6737,139.7420
+New York,USA,hall,New York City Hall,40.7128,-74.0059
+New York,USA,geo,Geometric centroid,40.71714,-73.94614
+New York,USA,pw,Pop-weighted centroid,40.72518,-73.90815
+New York,USA,zero,Columbus Circle (zero mile),40.7678,-73.9816
+Chicago,USA,hall,Chicago City Hall,41.8831,-87.6320
+Chicago,USA,geo,Geometric centroid,41.85752,-87.68022
+Chicago,USA,pw,Pop-weighted centroid,41.86601,-87.68737
+Chicago,USA,zero,State & Madison (0,0),41.8827,-87.6279
+Los Angeles,USA,hall,Los Angeles City Hall,34.0537,-118.2428
+Los Angeles,USA,geo,Geometric centroid,34.01729,-118.32614
+Los Angeles,USA,pw,Pop-weighted centroid,34.0330,-118.31727
+Los Angeles,USA,zero,1st & Main (address zero),34.0522,-118.2437
+San Francisco,USA,hall,San Francisco City Hall,37.7793,-122.4193
+San Francisco,USA,geo,Geometric centroid,37.76227,-122.43736
+San Francisco,USA,pw,Pop-weighted centroid,37.76194,-122.43729
+San Francisco,USA,zero,UN Plaza (Civic Center),37.7793,-122.4156
+Washington DC,USA,hall,John A. Wilson Building,38.8952,-77.0313
+Washington DC,USA,geo,Geometric centroid,38.90686,-77.01454
+Washington DC,USA,pw,Pop-weighted centroid,38.90686,-77.01436
+Washington DC,USA,zero,US Capitol (DC grid zero),38.8897,-77.0089
+Washington DC,USA,parliament,US Capitol,38.8897,-77.0089
+Washington DC,USA,leader,White House,38.8977,-77.0366
+Toronto,Canada,hall,Toronto City Hall,43.6532,-79.3832
+Toronto,Canada,geo,Geometric centroid,43.70247,-79.38915
+Toronto,Canada,pw,Pop-weighted centroid,43.71488,-79.37406
+Toronto,Canada,zero,Yonge & Dundas Square,43.6561,-79.3802
+Hamburg,Germany,hall,Hamburg Rathaus,53.5507,9.9932
+Hamburg,Germany,geo,Geometric centroid,53.54417,10.03044
+Hamburg,Germany,pw,Pop-weighted centroid,53.55694,10.02219
+Hamburg,Germany,zero,Rathaus / Binnenalster,53.5498,9.9995
+Munich,Germany,hall,Neues Rathaus,48.1374,11.5755
+Munich,Germany,geo,Geometric centroid,48.13744,11.56545
+Munich,Germany,pw,Pop-weighted centroid,48.13795,11.56466
+Munich,Germany,zero,Marienplatz,48.1374,11.5755
+Amsterdam,Netherlands,hall,Stadhuis Amsterdam,52.3675,4.9013
+Amsterdam,Netherlands,geo,Geometric centroid,52.36116,4.9009
+Amsterdam,Netherlands,pw,Pop-weighted centroid,52.36255,4.89537
+Amsterdam,Netherlands,zero,Dam Square,52.3731,4.8932
+Zurich,Switzerland,hall,Stadthaus Zürich,47.3714,8.5425
+Zurich,Switzerland,geo,Geometric centroid,47.38412,8.53402
+Zurich,Switzerland,pw,Pop-weighted centroid,47.38875,8.53010
+Zurich,Switzerland,zero,Paradeplatz,47.3686,8.5390
+Warsaw,Poland,hall,Warsaw City Hall (Plac Bankowy),52.2432,21.0009
+Warsaw,Poland,geo,Geometric centroid,52.22696,21.02421
+Warsaw,Poland,pw,Pop-weighted centroid,52.23031,21.01757
+Warsaw,Poland,zero,Km 0 Marker (Centrum),52.2316,21.0110
+Warsaw,Poland,parliament,Sejm,52.2208,21.0209
+Warsaw,Poland,leader,Kancelaria Prezesa Rady Ministrów,52.2232,21.0218
+Prague,Czech Republic,hall,New Town Hall (Mariánské náměstí),50.0878,14.4168
+Prague,Czech Republic,geo,Geometric centroid,50.06399,14.45296
+Prague,Czech Republic,pw,Pop-weighted centroid,50.07119,14.45061
+Prague,Czech Republic,zero,Old Town Square,50.0872,14.4213
+Prague,Czech Republic,parliament,Chamber of Deputies,50.0882,14.4020
+Prague,Czech Republic,leader,Strakova Akademie (PM),50.0932,14.4051
+Rome,Italy,hall,Palazzo Senatorio (Campidoglio),41.8934,12.4829
+Rome,Italy,geo,Geometric centroid,41.87777,12.48482
+Rome,Italy,pw,Pop-weighted centroid,41.87565,12.49399
+Rome,Italy,zero,Piazza Venezia (Km 0),41.8956,12.4824
+Rome,Italy,parliament,Camera dei Deputati,41.9000,12.4794
+Rome,Italy,leader,Palazzo Chigi (PM),41.9000,12.4799
