@@ -1,7 +1,7 @@
 export const CITIES = [
   {
     name: "London (new)", country: "UK", isCapital: true, adminAreaKm2: 1572,
-    hall:       { lat: 51.5087,  lon:  0.0197,   name: "City Hall, Royal Docks (2022–)" },
+    hall:       { lat: 51.5025,  lon:  0.0194,   name: "City Hall, Royal Docks (2022–)" },
     geo:        { lat: 51.4972,  lon: -0.1003,   name: "Geometric centroid" },
     pw:         { lat: 51.50701, lon: -0.11406,  name: "Pop-weighted centroid" },
     zero:       { lat: 51.5074,  lon: -0.1278,   name: "Charing Cross" },
@@ -55,7 +55,7 @@ export const CITIES = [
   },
   {
     name: "Oslo", country: "Norway", isCapital: true, adminAreaKm2: 480,
-    hall:       { lat: 59.9086,  lon: 10.7289,   name: "Oslo Rådhus" },
+    hall:       { lat: 59.9071,  lon: 10.7335,   name: "Oslo Rådhus" },
     geo:        { lat: 59.96925, lon: 10.65234,  name: "Geometric centroid" },
     pw:         { lat: 59.92074, lon: 10.76887,  name: "Pop-weighted centroid" },
     zero:       { lat: 59.9127,  lon: 10.7461,   name: "Oslo Cathedral" },
@@ -73,7 +73,7 @@ export const CITIES = [
   },
   {
     name: "Barcelona", country: "Spain", isCapital: false, adminAreaKm2: 101,
-    hall:       { lat: 41.3833,  lon:  2.1769,   name: "Ajuntament de Barcelona" },
+    hall:       { lat: 41.3826,  lon:  2.1769,   name: "Ajuntament de Barcelona" },
     geo:        { lat: 41.40239, lon:  2.1632,   name: "Geometric centroid" },
     pw:         { lat: 41.40312, lon:  2.16595,  name: "Pop-weighted centroid" },
     zero:       { lat: 41.3870,  lon:  2.1700,   name: "Plaça de Catalunya" },
