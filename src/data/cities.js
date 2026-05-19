@@ -55,7 +55,7 @@ export const CITIES = [
   },
   {
     name: "Oslo", country: "Norway", isCapital: true, adminAreaKm2: 480,
-    hall:       { lat: 59.9082,  lon: 10.7306,   name: "Oslo Rådhus" },
+    hall:       { lat: 59.9086,  lon: 10.7289,   name: "Oslo Rådhus" },
     geo:        { lat: 59.96925, lon: 10.65234,  name: "Geometric centroid" },
     pw:         { lat: 59.92074, lon: 10.76887,  name: "Pop-weighted centroid" },
     zero:       { lat: 59.9127,  lon: 10.7461,   name: "Oslo Cathedral" },
