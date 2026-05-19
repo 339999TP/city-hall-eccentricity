@@ -203,7 +203,7 @@ export const CITIES = [
     pw:         { lat: 50.07119, lon: 14.45061,  name: "Pop-weighted centroid" },
     zero:       { lat: 50.0872,  lon: 14.4213,   name: "Old Town Square" },
     parliament: { lat: 50.0898,  lon: 14.4039,   name: "Chamber of Deputies" },
-    leader:     { lat: 50.0932,  lon: 14.4051,   name: "Strakova Akademie (PM)" },
+    leader:     { lat: 50.0918,  lon: 14.4113,   name: "Strakova Akademie (PM)" },
   },
   {
     name: "Rome", country: "Italy", isCapital: true, adminAreaKm2: 1285,
